@@ -1,0 +1,27 @@
+// font family: Spartan
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+// primary colors
+$dark-magenta: hsl(300, 43%, 22%);
+$soft-pink: hsl(333, 80%, 67%);
+
+// neutral colors
+$dark-gray-magenta: hsl(303, 10%, 53%);
+$light-gray-magenta: hsl(300, 24%, 96%);
+
+// font-size
+$standard-size: 15px;
+
+// box-sizing reset
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+// media queries mixin
+@mixin mq($breakpoint) {
+  @media only screen and (min-width: $breakpoint) {
+    @content;
+  }
+}

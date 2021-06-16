@@ -1,0 +1,50 @@
+// background styles
+
+#bg-top-desktop {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @include mq(900px) {
+    display: block;
+    width: 40vw;
+  }
+}
+
+#bg-bottom-desktop {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  @include mq(900px) {
+    display: block;
+    height: 80vh;
+    width: 70vw;
+  }
+}
+
+#bg-top-mobile {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+
+  @include mq(900px) {
+    display: none;
+  }
+}
+
+#bg-bottom-mobile {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+
+  @include mq(900px) {
+    display: none;
+  }
+}

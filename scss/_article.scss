@@ -1,0 +1,21 @@
+// article styles
+@import "uppercontainer";
+@import "lowercontainer";
+
+.container {
+  max-width: 90vw;
+  margin: 18vw auto;
+  background-color: transparent;
+  font-family: "Spartan", sans-serif;
+  font-size: $standard-size;
+
+  @include mq(576px) {
+    max-width: 80vw;
+    margin: 8vw auto;
+    margin-bottom: 0;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+}

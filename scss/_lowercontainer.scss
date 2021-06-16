@@ -1,0 +1,68 @@
+.lower {
+  margin-top: 2vw;
+
+  @include mq(1024px) {
+    display: flex;
+    height: 300px;
+  }
+
+  li {
+    background-color: $dark-magenta;
+    color: $light-gray-magenta;
+    margin: 1.5em 0;
+    padding: 3em 4.3em 3em 3em;
+    font-size: 0.8em;
+    line-height: 1.6em;
+    border-radius: 1em;
+
+    @include mq(1024px) {
+      height: 240px;
+    }
+
+    .profile {
+      display: flex;
+      margin-bottom: 1.6em;
+
+      img {
+        border-radius: 50%;
+        height: 40px;
+        margin-right: 1.2em;
+      }
+
+      h4 {
+        margin-bottom: 0.5em;
+      }
+
+      span {
+        color: $soft-pink;
+      }
+    }
+
+    p {
+      @include mq(1024px) {
+        font-size: 1.1em;
+        line-height: 1.6;
+      }
+    }
+  }
+
+  .colton {
+    @include mq(1024px) {
+      margin-right: 1em;
+      align-self: flex-start;
+    }
+  }
+  .irene {
+    @include mq(1024px) {
+      margin-right: 1em;
+      margin-left: 1em;
+      align-self: center;
+    }
+  }
+  .anne {
+    @include mq(1024px) {
+      margin-left: 1em;
+      align-self: flex-end;
+    }
+  }
+}

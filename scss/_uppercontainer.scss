@@ -1,0 +1,70 @@
+@import "list";
+
+.upper {
+  display: block;
+
+  @include mq(1024px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 8vw;
+
+    @include mq(768px) {
+      text-align: left;
+      margin: 0 7vw 0 0;
+    }
+
+    h2 {
+      padding: 6vw;
+      color: $dark-magenta;
+      font-size: 2em;
+      font-weight: 700;
+      letter-spacing: -1px;
+      line-height: 1;
+
+      @include mq(768px) {
+        font-size: 3em;
+        padding: 0 0 2vh 0;
+      }
+    }
+
+    p {
+      color: $dark-gray-magenta;
+      line-height: 1.6;
+    }
+  }
+
+  .rate {
+    @include mq(1024px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .reviews {
+      @extend %li;
+
+      @include mq(1024px) {
+        align-self: flex-start;
+      }
+    }
+
+    .report-guru {
+      @extend %li;
+
+      @include mq(1024px) {
+        align-self: center;
+      }
+    }
+
+    .best-tech {
+      @extend %li;
+
+      @include mq(1024px) {
+        align-self: flex-end;
+      }
+    }
+  }
+}
